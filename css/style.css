@@ -58,14 +58,17 @@ table {
     src: url('../font/meriva-extended-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
+html {
 
+}
 body {
 	/*background-image: url(../img/ticks.png);*/
 	background: #ddd;
+	background: linear-gradient(to bottom, rgba(255,238,232,0.5) 0%,rgba(224,224,224,0.5) 100%) fixed 100% 100%;
 	box-sizing: border-box;
 	font-family: meriva;
 }
-p {
+p, li{
 	font-size: 1.1rem;
 	line-height: 1.4;
 }
@@ -141,4 +144,38 @@ h1 {
 }
 .einleitung > * {
 	margin-right: 20vw;
+}
+.text-block {
+	display: flex;
+}
+.text-block img {
+	width: 100%;
+}
+.text-block:nth-of-type(3n) div:first-child{
+	order: 2;
+}
+.text-block li {
+	list-style: url(../img/plus.svg) outside;
+	padding-left: 1rem;
+	margin-left: 1rem;
+}
+@media (max-width: 700px) {
+	.text-block {
+		flex-direction: column;
+	}
+	.text-block div{
+		order:0!important;
+	}
+	img {
+		width: 50% !important;
+	}
+
+}
+
+.spacer {
+	padding: 3rem 0 0 8rem;
+}
+.text {
+	padding: 2rem;
+	max-width: 600px;
 }
