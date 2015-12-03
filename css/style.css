@@ -99,15 +99,15 @@ h1 {
 	fill:#E55A3F;
 }
 .boy {
-	animation: fadein 1s;
+	animation: fadein 2.5s;
 }
 .girl {
-	animation: fadein 2.2s;
+	animation: fadein 3.2s;
 }
 
 @keyframes fadein {
     0% { 
-    	transform: translate(0, 45px);
+    	transform: translate(0, 65px);
     }
     100% { 
     	transform: translate(0, 0);
