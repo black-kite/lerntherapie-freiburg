@@ -1,0 +1,144 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END RESET*/
+
+
+@font-face {
+    font-family: 'meriva-medium';
+    src: url('../font/meriva-medium-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'meriva';
+    src: url('../font/meriva-regular-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'meriva-extended';
+    src: url('../font/meriva-extended-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
+body {
+	/*background-image: url(../img/ticks.png);*/
+	background: #ddd;
+	box-sizing: border-box;
+	font-family: meriva;
+}
+p {
+	font-size: 1.1rem;
+	line-height: 1.4;
+}
+h1 {
+	font-size: 2.5rem;
+	padding-bottom: 0.8rem;
+}
+
+.st0{fill:#1A1A1A;}
+.st1{font-family:'meriva-medium';}
+.st2{font-size:80px;}
+.st3{font-family:'meriva-extended';}
+.st4{font-size:32px;}
+
+#headergraphic {
+	position: fixed;
+	margin: 50px auto;
+	left: 0;
+	right: 0;
+	height: 80vh;
+	display: block;
+	z-index: -1;
+}
+@media (max-width: 800px) {
+	#headergraphic {
+		width: 100%
+	}
+}
+
+.outline {
+	fill:#E55A3F;
+}
+.boy {
+	animation: fadein 1s;
+}
+.girl {
+	animation: fadein 2.2s;
+}
+
+@keyframes fadein {
+    0% { 
+    	transform: translate(0, 45px);
+    }
+    100% { 
+    	transform: translate(0, 0);
+    }
+}
+
+.ext {
+	font-family:'meriva-extended';
+
+}
+
+.claim {
+	position: fixed;
+	margin-left: 7vw;
+	font-family:'meriva-extended';
+
+}
+
+.wrapper {
+	width: 93vw;
+	width: calc(100%-7vw);
+	background-color: #fff;
+	margin-left: 7vw;
+	margin-top: 90vh;
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.4);
+}
+.einleitung {
+	padding: 4rem 0 2rem 8rem;
+	background-color: #E9B486;
+	color: #000;
+}
+.einleitung > * {
+	margin-right: 20vw;
+}
