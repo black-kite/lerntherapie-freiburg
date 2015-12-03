@@ -62,13 +62,14 @@ html {
 
 }
 body {
-	/*background-image: url(../img/ticks.png);*/
-	background: #ddd;
-	background: linear-gradient(to bottom, rgba(255,238,232,0.5) 0%,rgba(224,224,224,0.5) 100%) fixed 100% 100%;
+	background: url(../img/ticks.png) fixed;
+	//background: #ddd;
+	//background: linear-gradient(to bottom, rgba(255,238,232,0.5) 0%,rgba(224,224,224,0.5) 100%) fixed 100% 100%;
+	background: #F2E5BF;
 	box-sizing: border-box;
 	font-family: meriva;
 }
-p, li{
+p, li, h4, h5{
 	font-size: 1.1rem;
 	line-height: 1.4;
 }
@@ -76,8 +77,19 @@ h1 {
 	font-size: 2.5rem;
 	padding-bottom: 0.8rem;
 }
+h3 {
+	font-size: 1.8rem;
+	line-height: 1.4;
+	padding-bottom: 0.4rem;
+}
 
-.st0{fill:#1A1A1A;}
+a {
+	color: inherit;
+}
+
+.st0 { 
+	fill:#1C3A40;
+}
 .st1{font-family:'meriva-medium';}
 .st2{font-size:80px;}
 .st3{font-family:'meriva-extended';}
@@ -99,13 +111,14 @@ h1 {
 }
 
 .outline {
-	fill:#E55A3F;
+	fill: #E55A3F;
+	fill: url(#gradient);
 }
 .boy {
-	animation: fadein 2.5s;
+	animation: fadein 1.5s;
 }
 .girl {
-	animation: fadein 3.2s;
+	animation: fadein 2.5s;
 }
 
 @keyframes fadein {
@@ -139,8 +152,8 @@ h1 {
 }
 .einleitung {
 	padding: 4rem 0 2rem 8rem;
-	background-color: #E9B486;
-	color: #000;
+	background-color: #1C3A40;
+	color: #fff;
 }
 .einleitung > * {
 	margin-right: 20vw;
@@ -178,4 +191,7 @@ h1 {
 .text {
 	padding: 2rem;
 	max-width: 600px;
+}
+.kontakt {
+	padding-left: 10rem;
 }
