@@ -5,6 +5,7 @@ var minifyHTML = require('gulp-minify-html');
 var postcss      = require('gulp-postcss');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task("stylesheets", function() {
   gulp.src("css/*.css")
@@ -32,7 +33,10 @@ gulp.task('html', function() {
     .pipe(gulp.dest('./dist/'));
 });
 
-
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 //Gulp watch directorys
  gulp.task('watch', function () {
