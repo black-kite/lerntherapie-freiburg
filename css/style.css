@@ -193,5 +193,10 @@ a {
 	max-width: 600px;
 }
 .kontakt {
+	background-color: #ddd;
 	padding-left: 10rem;
+	padding-right: 20rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-top: 4rem;
 }
