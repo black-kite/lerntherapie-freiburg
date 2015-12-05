@@ -19,5 +19,9 @@
   "scripts": {},
   "author": "Milan Gress",
   "license": "UNLICENSED",
-  "homepage": "http://www.milangress.de"
+  "homepage": "http://www.milangress.de",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/black-kite/lerntherapie-freiburg"
+  }
 }
