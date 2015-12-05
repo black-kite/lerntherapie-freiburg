@@ -45,19 +45,6 @@ table {
 /*END RESET*/
 
 
-@font-face {
-    font-family: 'meriva-medium';
-    src: url('../font/meriva-medium-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-@font-face {
-    font-family: 'meriva';
-    src: url('../font/meriva-regular-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-@font-face {
-    font-family: 'meriva-extended';
-    src: url('../font/meriva-extended-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
-}
-
 html {
 
 }
