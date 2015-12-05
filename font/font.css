@@ -4,11 +4,11 @@
 
 @font-face {
     font-family: 'meriva-extended';
-    src: url('extended.eot');
-    src: url('extended.eot?#iefix') format('embedded-opentype'),
-         url('extended.woff2') format('woff2'),
-         url('extended.woff') format('woff'),
-         url('extended.ttf') format('truetype');
+    src: url('ext/extended.eot');
+    src: url('ext/extended.eot?#iefix') format('embedded-opentype'),
+         url('ext/extended.woff2') format('woff2'),
+         url('ext/extended.woff') format('woff'),
+         url('ext/extended.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -19,11 +19,11 @@
 
 @font-face {
     font-family: 'meriva-medium';
-    src: url('medium.eot');
-    src: url('medium.eot?#iefix') format('embedded-opentype'),
-         url('medium.woff2') format('woff2'),
-         url('medium.woff') format('woff'),
-         url('medium.ttf') format('truetype');
+    src: url('med/medium.eot');
+    src: url('med/medium.eot?#iefix') format('embedded-opentype'),
+         url('med/medium.woff2') format('woff2'),
+         url('med/medium.woff') format('woff'),
+         url('med/medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -34,11 +34,11 @@
 
 @font-face {
     font-family: 'meriva-regular';
-    src: url('regular.eot');
-    src: url('regular.eot?#iefix') format('embedded-opentype'),
-         url('regular.woff2') format('woff2'),
-         url('regular.woff') format('woff'),
-         url('regular.ttf') format('truetype');
+    src: url('reg/regular.eot');
+    src: url('reg/regular.eot?#iefix') format('embedded-opentype'),
+         url('reg/regular.woff2') format('woff2'),
+         url('reg/regular.woff') format('woff'),
+         url('reg/regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
