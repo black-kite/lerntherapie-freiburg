@@ -54,6 +54,10 @@ gulp.task('img', ['clean'], function() {
   gulp.src('./img/**/*')
     .pipe(gulp.dest('./dist/img'))
 });
+gulp.task('js', ['clean'], function() {
+  gulp.src('./js/**/*')
+    .pipe(gulp.dest('./dist/js'))
+});
 
 //Gulp watch directorys
  gulp.task('watch', function () {
@@ -70,4 +74,4 @@ gulp.task('img', ['clean'], function() {
 
 // default gulp task
 
-gulp.task('default', ['stylesheets', 'html', 'font', 'img'], function() {});
+gulp.task('default', ['stylesheets', 'html', 'font', 'img', 'js'], function() {});
