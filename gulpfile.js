@@ -63,7 +63,7 @@ gulp.task('img', ['clean'], function() {
 // 	gulp.watch('./assets/scss/critical/*.scss', ['critical']);
  });
 
- gulp.task('deploy', ['default'], function() {
+ gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
 });
