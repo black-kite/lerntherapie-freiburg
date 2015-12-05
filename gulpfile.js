@@ -12,8 +12,10 @@ var ghPages = require('gulp-gh-pages');
 
 gulp.task('clean', function() {
   return del([
+    '.publish/**/*',
     'dist/**/*',
-    '!dist/CNAME'
+    '!dist/CNAME',
+    '!dist/.gitignore'
     ]);
 });
 
