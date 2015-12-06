@@ -1,28 +1,24 @@
+@custom-media --mid-viewport (max-width: 50em);
+
+:root {
+  --leftSpace: 7vw;
+}
+
 /*RESET*/
-html, body, div, span, applet, object, iframe,
+html, body, div, span, object,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, q,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+footer, header, 
+menu, nav, output, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
 }
 body {
 	line-height: 1;
@@ -30,34 +26,31 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+a {
+	color: inherit;
 }
 /*END RESET*/
 
+
+/*HIDDEN UI*/
 #pushscroll {
 	height: 100%;
 	width: 100%;
 	z-index: 10;
 }
-
-html {
-
+@media (--mid-viewport) {
+	#pushscroll {
+		height: 70%;
+	}
 }
+
+
 body {
 	background: #ddd;
 /*	background: linear-gradient(to bottom, rgba(255,238,232,0.5) 0%,rgba(224,224,224,0.5) 100%) fixed 100% 100%;*/
 	box-sizing: border-box;
 	font-family: meriva-regular;
+	hyphens: auto;
 }
 p, li, h4, h5{
 	font-size: 1.1rem;
@@ -73,17 +66,23 @@ h3 {
 	padding-bottom: 0.4rem;
 }
 
-a {
-	color: inherit;
-}
+/*SVG*/
 
 .st0 { 
 	fill:#1C3A40;
 }
-.st1{font-family:'meriva-medium';}
-.st2{font-size:80px;}
-.st3{font-family:'meriva-extended';}
-.st4{font-size:32px;}
+.st1 {
+	font-family:'meriva-medium';
+}
+.st2 {
+	font-size:80px;
+}
+.st3 {
+	font-family:'meriva-extended';
+}
+.st4 {
+	font-size:32px;
+}
 
 #headergraphic {
 	position: fixed;
@@ -95,16 +94,16 @@ a {
 	z-index: -1;
 	pointer-events: none;
 }
-@media (max-width: 800px) {
+@media (--mid-viewport) {
 	#headergraphic {
-		width: 100%
+		width: 100%;
+		margin: 0;
+		transform: translateY(-15%);
 	}
 }
 
-.outline {
-	fill: #E55A3F;
-	fill: url(#gradient);
-}
+/*ANIMATION*/
+
 .boy {
 	animation: fadein 1.5s;
 }
@@ -121,26 +120,20 @@ a {
     }
 }
 
+/*TYPE*/
 .ext {
 	font-family:'meriva-extended';
-
-}
-
-.claim {
-	position: fixed;
-	margin-left: 7vw;
-	font-family:'meriva-extended';
-
 }
 
 .wrapper {
 	width: 93vw;
 	/*width: calc(100%-7vw);*/
 	background-color: #fff;
-	margin-left: 7vw;
+	margin-left: var(--leftSpace);
 	margin-top: -10vh;
 	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.4);
 }
+
 .einleitung {
 	padding: 4rem 0 2rem 8rem;
 	background-color: #1C3A40;
@@ -163,26 +156,15 @@ a {
 	padding-left: 1rem;
 	margin-left: 1rem;
 }
-@media (max-width: 700px) {
-	.text-block {
-		flex-direction: column;
-	}
-	.text-block div{
-		order:0!important;
-	}
-	img {
-		width: 50% !important;
-	}
-
-}
 
 .spacer {
 	padding: 3rem 0 0 8rem;
 }
 .text {
 	padding: 2rem;
-	max-width: 600px;
+	max-width: 620px;
 }
+
 .kontakt {
 	background-color: #ddd;
 	padding-left: 10rem;
@@ -190,4 +172,45 @@ a {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	margin-top: 4rem;
+}
+
+@media (--mid-viewport) {
+	p, li, h4, h5{
+		font-size: 1rem;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	.text-block {
+		flex-direction: column;
+	}
+	.text-block div{
+		order:0!important;
+		align-self: center;
+	}
+	img {
+		width: 75% !important;
+		padding: auto 0;
+	}
+	.wrapper {
+		margin-left: 0;
+		width: 100%;
+	}
+	.einleitung {
+		padding: 4rem 2rem 4rem 2rem;
+	}
+	.einleitung > * {
+	margin-right: 0;
+	}
+	.spacer {
+		padding: 2rem 0rem 2rem 0rem;
+	}
+	.kontakt {
+		padding: 4rem 2rem 4rem 2rem;
+	}
+
 }

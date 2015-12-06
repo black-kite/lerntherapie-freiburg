@@ -61,8 +61,8 @@ gulp.task('js', ['clean'], function() {
 
 //Gulp watch directorys
  gulp.task('watch', function () {
- 	gulp.watch('css/*.css', ['stylesheets']);
- 	gulp.watch('*.html', ['html']);
+ 	gulp.watch('css/*.css', ['default']);
+ 	gulp.watch('*.html', ['default']);
 // 	gulp.watch('./assets/images/src/**/*', ['assetimage']);
 // 	gulp.watch('./assets/scss/critical/*.scss', ['critical']);
  });
